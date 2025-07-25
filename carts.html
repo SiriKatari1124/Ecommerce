@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment | ShoPperZ</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+
+    nav {
+      background-color: #9b8c91;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      padding: 0.5rem;
+      background-color: #45393d;
+      color: white;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.7rem;
+      font-size: 1.1rem;
+      background-color: #bba0a9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #584e52;
+    }
+
+    #successMessage {
+      display: none;
+      background-color: #d4edda;
+      color: #155724;
+      border-left: 5px solid #28a745;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #716267;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">ShoPperZ</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="payment.html">Payment</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Make a Payment</h1>
+    <p>Secure and Fast Checkout</p>
+  </header>
+
+  <!-- Main Form -->
+  <main>
+    <form id="paymentForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" required />
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" required />
+      </div>
+
+      <div class="form-group">
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456" required />
+      </div>
+
+      <div class="form-group">
+        <label>Expiration Date</label>
+        <input type="text" placeholder="MM/YY" required />
+      </div>
+
+      <div class="form-group">
+        <label>CVV</label>
+        <input type="number" placeholder="123" required />
+      </div>
+
+      <button type="submit">Make Payment</button>
+    </form>
+
+    <div id="successMessage">
+      ✅ Payment Successful! Thank you for shopping with ShoPperZ.
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ShoPperZ. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      document.getElementById("successMessage").style.display = "block";
+      document.getElementById("paymentForm").reset();
+    });
+  </script>
+</body>
+</html>
