@@ -1,70 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Commerce Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoPperZ | E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <nav>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="main-header">
+    <div class="logo"><a href="#">ShoPperZ</a></div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="carts.html">Carts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." />
+      <ion-icon name="search"></ion-icon>
+    </div>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="section">
-    <h1>Welcome to ShopEase</h1>
-    <h3>Your one-stop online shop for all your needs. Discover amazing deals on the latest products, from fashion and electronics to home essentials.</h3>
-    <button>Start Shopping</button>
+  <section class="hero-slider">
+    <img src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg" alt="Banner" />
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <h3>At ShopEase, we aim to provide a seamless shopping experience for our customers. Founded in 2020, we have quickly grown into one of the most trusted e-commerce platforms, offering a wide range of products at unbeatable prices.</h3>
-    <h4>Our mission is to bring convenience to your doorstep with fast delivery, secure payments, and excellent customer service.</h4>
-  </section>
+  <main class="product-section">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="product-grid">
+      <!-- EXAMPLE CARD -->
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" alt="Shoes" />
+        <h3>SHOES</h3>
+        <p class="price">$5</p>
+        <p class="desc">Lightweight, breathable shoes perfect for workouts and daily wear.</p>
+      </div>
 
-  <!-- Services Section -->
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <ul>
-      <li><strong>Wide Product Range:</strong> Explore thousands of products from trusted brands and local sellers.</li>
-      <li><strong>Fast Shipping:</strong> Get your orders delivered within 2-3 business days in major cities.</li>
-      <li><strong>Easy Returns:</strong> Hassle-free returns and refunds if you're not satisfied with your purchase.</li>
-      <li><strong>Secure Payments:</strong> Multiple payment options, including cash on delivery, credit cards, and digital wallets.</li>
-    </ul>
-  </section>
+      <div class="product-card">
+        <img src="s2.jpg" alt="Hair Bands" />
+        <h3>Hair Bands</h3>
+        <p class="price">$6.34</p>
+        <p class="desc">Stylish and durable hair bands for everyday use.</p>
+      </div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <h3>Have questions or need assistance? We're here to help!</h3>
-    <h3>Email: support@shopease.com</h3>
-    <h3>Phone: +1 (123) 456-7890</h3>
-    <h4>Follow us on social media for the latest updates and exclusive deals.</h3>
-    <div>
-      <a href="#">Facebook</a> | 
-      <a href="#">Twitter</a> | 
-      <a href="#">Instagram</a>
+      <div class="product-card">
+        <img src="s1.jpg" alt="Saree Set" />
+        <h3>Combo Saree sets</h3>
+        <p class="price">$18</p>
+        <p class="desc">Traditional Indian sarees in vibrant colors and patterns.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="air.jpeg" alt="AC" />
+        <h3>Air Conditioner</h3>
+        <p class="price">$78</p>
+        <p class="desc">Split AC with turbo cooling and inverter tech.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg" alt="Laptop" />
+        <h3>Lenovo Laptop</h3>
+        <p class="price">$99</p>
+        <p class="desc">Ryzen 5, 8GB RAM, 512GB SSD, FHD 15.6”.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="p1.jpg" alt="Women's Wear" />
+        <h3>Women's Wear</h3>
+        <p class="price">$29.7</p>
+        <p class="desc">Trendy western wear for women in stylish patterns.</p>
+      </div>
+
+      <!-- Add remaining products similarly -->
     </div>
-  </section>
+  </main>
 
-  <script src="script.js"></script>
+  <footer class="main-footer">
+    <div class="footer-top">
+      <h2>ShoPperZ</h2>
+      <div class="socials">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ShoPperZ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
