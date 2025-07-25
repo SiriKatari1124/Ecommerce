@@ -1,25 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Us | ShoPperZ</title>
-    <link rel="stylesheet" href="style1.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoPperZ | E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>About ShoPperZ</h1>
-    </header>
-    <main>
-        <section class="about-content">
-            <p>ShoPperZ is an innovative e-commerce platform launched in 2025, aiming to provide quality products at unbeatable prices. We bring together style, technology, and convenience in a single shopping destination.</p>
-            <h3>Our Vision</h3>
-            <p>To be the most customer-centric online store in the country.</p>
-            <h3>Our Mission</h3>
-            <p>Deliver happiness through shopping!</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 ShoPperZ. All Rights Reserved.</p>
-    </footer>
+  <header class="main-header">
+    <div class="logo"><a href="#">ShoPperZ</a></div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="carts.html">Carts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." />
+      <ion-icon name="search"></ion-icon>
+    </div>
+  </header>
+
+  <section class="hero-slider">
+    <img src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg" alt="Banner" />
+  </section>
+
+  <main class="product-section">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="product-grid">
+      <!-- EXAMPLE CARD -->
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" alt="Shoes" />
+        <h3>SHOES</h3>
+        <p class="price">$5</p>
+        <p class="desc">Lightweight, breathable shoes perfect for workouts and daily wear.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="s2.jpg" alt="Hair Bands" />
+        <h3>Hair Bands</h3>
+        <p class="price">$6.34</p>
+        <p class="desc">Stylish and durable hair bands for everyday use.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="s1.jpg" alt="Saree Set" />
+        <h3>Combo Saree sets</h3>
+        <p class="price">$18</p>
+        <p class="desc">Traditional Indian sarees in vibrant colors and patterns.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="air.jpeg" alt="AC" />
+        <h3>Air Conditioner</h3>
+        <p class="price">$78</p>
+        <p class="desc">Split AC with turbo cooling and inverter tech.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg" alt="Laptop" />
+        <h3>Lenovo Laptop</h3>
+        <p class="price">$99</p>
+        <p class="desc">Ryzen 5, 8GB RAM, 512GB SSD, FHD 15.6”.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="p1.jpg" alt="Women's Wear" />
+        <h3>Women's Wear</h3>
+        <p class="price">$29.7</p>
+        <p class="desc">Trendy western wear for women in stylish patterns.</p>
+      </div>
+
+      <!-- Add remaining products similarly -->
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-top">
+      <h2>ShoPperZ</h2>
+      <div class="socials">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ShoPperZ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
